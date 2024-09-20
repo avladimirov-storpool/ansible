@@ -1,5 +1,6 @@
 ---
 - name: Deploy ifup-pre-local (CentOS/RHEL)
+  become: yes
   copy:
     src: ifup-pre-local
     dest: /sbin
